@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vogt-legatene</title>
+  <style>
+    :root {
+      --dark: #0f172a;
+      --blue: #1e3a8a;
+      --accent: #2563eb;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 18px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #93c5fd;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, rgba(30,58,138,0.85), rgba(15,23,42,0.92)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.95;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--blue);
+    }
+
+    .highlight {
+      background: #eef2ff;
+      padding: 22px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .cta {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vogt-legatene</h1>
+  <nav>
+    <a href="#om">Om</a>
+    <a href="#formaal">Formål</a>
+    <a href="#soknad" class="sok">Søknad</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Støtte til slekt, utdannelse og fellesskap</h2>
+  <p>Vogt-legatene gir støtte til medlemmer av Vogt-slekten med fokus på utdanning, tradisjon og samhold mellom generasjoner.</p>
+</section>
+
+<div class="container">
+
+  <section id="soknad" class="highlight">
+    <h3>Søknadskrav</h3>
+    <p>
+      For å søke må du dokumentere tilhørighet til Vogt-slekten og legge ved studiebevis for kommende studieår.
+      Første mulige søknadsår er 2026/2027. Søknadsfrist er 31/7. Støtte gis i inntil 3 år, og det må søkes hvert år.
+      Utbetaling skjer i august/september. Alle som oppfyller kravene mottar et gitt beløp per år, med mulighet for høyere støtte ved spesielt kostbare studier.
+    </p>
+
+    <div class="cta">
+      <button id="sok">Søk nå</button>
+    </div>
+  </section>
+
+  <section id="om" class="grid">
+    <div class="card">
+      <h3>Om legatene</h3>
+      <p>Vogt-legatene er opprettet for etterkommere av sorenskriver Niels Nielsen Vogt og støtter familiemedlemmer i deres utdanningsløp og utvikling.</p>
+    </div>
+
+    <div class="card">
+      <h3>Formål</h3>
+      <p>Legatet skal bidra til utdannelse og styrke slektsfølelse, familietilhørighet og videreføring av tradisjoner.</p>
+    </div>
+
+    <div class="card">
+      <h3>Støtte</h3>
+      <p>Alle som oppfyller kravene mottar et gitt beløp per år, med mulighet for høyere støtte ved spesielt kostbare studier.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Vogt-legatene
+</footer>
+
+<script>
+  console.log("Vogt-legatene nettside lastet");
+   let knappEl = document.querySelector("#sok");
+    knappEl.addEventListener("click",byttSide)
+
+    function byttSide(){
+       window.location.href = "Søk.html";
+    }
+</script>
+
+</body>
+</html>

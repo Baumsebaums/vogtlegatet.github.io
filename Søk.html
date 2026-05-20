@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Søknad – Vogt-legatene</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f6f7fb;
+      color: #111;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .important {
+      margin-top: 20px;
+      padding: 15px;
+      border-left: 4px solid #2563eb;
+      background: #eef2ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #0f172a;
+      color: white;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="hjem">Vogt-legatene – Søknad</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Søknad om støtte</h2>
+    <p>
+      Søknad om støtte fra Vogt-legatene sendes kun via e-post.
+    </p>
+
+    <div class="important">
+      <p><strong>Søknadsfrist:</strong> 31. juli hvert år</p>
+      <p><strong>Søknadsmetode:</strong> E-post: hedvig.vold@gmail.com</p>
+      <p><strong>Viktig:</strong> Søknaden må inneholde dokumentasjon på slektskap og studiebevis for kommende studieår.</p>
+    </div>
+
+    <p style="margin-top:20px;">
+      Alle henvendelser og søknader skal sendes til legatets offisielle e-postadresse.
+      <strong>Dette er eneste godkjente søknadskanal.</strong>
+    </p>
+  </div>
+</div>
+
+<footer>
+  © 2026 Vogt-legatene
+</footer>
+<script>
+  let knappEl = document.querySelector("#hjem");
+    knappEl.addEventListener("click",byttSide)
+
+    function byttSide(){
+       window.location.href = "Hjemmeside.html";
+    }
+</script>
+</body>
+</html>
